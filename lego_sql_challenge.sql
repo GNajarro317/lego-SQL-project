@@ -4,6 +4,7 @@
 -- Lego SQL Challenge (Snowflake)
 -- Part 1: Schema setup
 -- Part 2: Unique parts analysis
+-- Part 3: Tableau dashboard (built outside this file, using the exported views)
 
 -- ============================================================
 -- PART 1: SCHEMA SETUP
@@ -288,7 +289,7 @@ lt as (
     select part_num as unique_part_num
     from mt
     group by part_num
-    having count(*) = 1
+    having count(distinct set_num) = 1
 )
 
 -- 2. Set Analysis:
@@ -357,7 +358,7 @@ lt as (
         -- subquery: number of sets each part appears in
         select
             part_num,
-            count(set_num) as set_count
+            count(distinct set_num) as set_count
         from pt
             inner join st
                 on pt.id = st.id
