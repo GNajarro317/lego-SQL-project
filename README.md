@@ -1,7 +1,7 @@
 ### LEGO SQL Analysis
  
 ### Date created
-10/02/2026 | last updated: 10/05/2026
+10/02/2026 | last updated: 11/17/2026
  
 ### Description
 A Snowflake SQL project that builds a LEGO database schema from staging tables, links it with primary and foreign keys, then finds which parts appear in only one set. Results are rolled up per set with release year and theme to show which sets rely most on unique parts, then visualized in a Tableau dashboard.
@@ -28,10 +28,8 @@ Created in the `gerard_lego` schema from the `staging` tables:
 ### Files
 - `lego_sql_challenge.sql`: schema setup, both views, and the final select statements
 - `problem.md`: scenario, skills, and task write-up
-- Dashboard screenshot and Tableau Public link: *(add once finished)*
+- Dashboard screenshot and <a href="https://public.tableau.com:9443/views/LegoSetAnalysis_17921008175460/Dashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">Tableau Public link</a>
 ### Key Takeaways
 - Counting distinct sets per part gives a true "one set only" check
 - Staging data had parts missing from the parts table, so they were added with null names
 - A second master view makes the results easy to connect to the Tableau dashboard
-### Data Source
-1. LEGO staging schema provided with the SQL Portfolio challenge
