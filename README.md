@@ -28,7 +28,7 @@ Created in the `gerard_lego` schema from the `staging` tables:
 ### Files
 - `lego_sql_challenge.sql`: schema setup, both views, and the final select statements
 - `problem.md`: scenario, skills, and task write-up
-- Dashboard screenshot and <a href="https://public.tableau.com:9443/views/LegoSetAnalysis_17921008175460/Dashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">Tableau Public link</a>
+- Dashboard screenshot and <a href="https://public.tableau.com/app/profile/gerardo.najarro/viz/LegoSetAnalysis_17921008175460/Dashboard">Tableau Public link</a>
 ### Key Takeaways
 - Counting distinct sets per part gives a true "one set only" check
 - Staging data had parts missing from the parts table, so they were added with null names
